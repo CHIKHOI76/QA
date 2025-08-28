@@ -4,47 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             background: linear-gradient(120deg, #43cea2, #185a9d);
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
         }
         .register-container {
             background: #fff;
-            padding: 40px 30px;
             border-radius: 12px;
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-            width: 370px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 40px 30px;
         }
-        .register-container h2 {
-            margin-bottom: 24px;
-            color: #185a9d;
-        }
-        .register-container input[type="text"],
-        .register-container input[type="password"],
-        .register-container input[type="email"] {
-            width: 100%;
-            padding: 12px 10px;
-            margin: 10px 0 20px 0;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 16px;
-        }
-        .register-container button {
-            width: 100%;
-            padding: 12px;
-            background: #185a9d;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
+    </style>
+</head>
+<body>
+    <div class="container d-flex align-items-center justify-content-center min-vh-100">
+        <form class="register-container w-100" style="max-width: 400px;" method="post" action="">
+            <h2 class="mb-4 text-center text-primary">Register</h2>
+            <div class="mb-3">
+                <input type="text" name="username" class="form-control" placeholder="Username" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+            <div class="login-link mt-3 text-center">
+                Already have an account? <a href="login.php" class="text-primary">Login</a>
+            </div>
+        </form>
+    </div>
+    <!-- Bootstrap JS (optional, for interactivity) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
             font-size: 16px;
             cursor: pointer;
             transition: background 0.2s;
