@@ -140,7 +140,7 @@
     .sidebar ul li a, .hot-box ul li {
       font-size: 1.08rem;
       font-weight: 500;
-      color: #6366f1;
+      color: #646578ff;
       text-decoration: none;
       transition: color 0.2s;
     }
